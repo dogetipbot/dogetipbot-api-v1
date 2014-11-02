@@ -12,7 +12,7 @@ The current stable API version is **v1**. To ensure compatibility, future API ve
 
 ### Formats
 
-The base URL for all API resources is `https://api.dogetipbot.com/v1/`.
+The base URL for all API resources is `https://dogetipbot.com/api/v1/`.
 
 All data is sent and received as [JSON][]. Blank fields are included as `null` instead of being omitted.
 
@@ -43,7 +43,7 @@ History responses are cached for one minute.
 All API endpoints require an API key to be passed in the request header. API keys are generated in the API section of the dogetipbot dashboard (https://dogetipbot.com/dashboard/api).
 
 ````bash
-curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://api.dogetipbot.com/v1/
+curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://dogetipbot.com/api/v1/
 ````
 
 ## Endpoints
@@ -53,7 +53,7 @@ curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://api.dogetipbot.
 Return the current account balance.
 
 ````bash
-curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://api.dogetipbot.com/v1/balance.json
+curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://dogetipbot.com/api/v1/balance.json
 ````
 
 ````json
@@ -68,7 +68,7 @@ curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://api.dogetipbot.
 Return the last 50 transactions for the account.
 
 ````bash
-curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://api.dogetipbot.com/v1/history.json
+curl -H "Authorization: API-KEY <xxxxxxxxxx-xxxxxxxxxx>" https://dogetipbot.com/api/v1/history.json
 ````
 
 ````json
